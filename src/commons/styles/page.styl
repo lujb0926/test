@@ -1,0 +1,139 @@
+@import "./variable.styl"
+@import "./mixin.styl"
+
+html,
+body {
+  height: 100%;
+}
+body {
+  font-size: 16px;
+}
+.pt10 {
+  padding-top: .1rem !important;
+}
+.pr10 {
+  padding-right: .1rem !important;
+}
+.pb10 {
+  padding-bottom: .1rem !important;
+}
+.pl10 {
+  padding-left: .1rem !important;
+}
+.pt30 {
+  padding-top: .3rem !important;
+}
+.pr30 {
+  padding-right: .3rem !important;
+}
+.pb30 {
+  padding-bottom: .3rem !important;
+}
+.pl30 {
+  padding-left: .3rem !important;
+}
+.pt50 {
+  padding-top: .5rem !important;
+}
+.pr50 {
+  padding-right: .5rem !important;
+}
+.pb50 {
+  padding-bottom: .5rem !important;
+}
+.pl50 {
+  padding-left: .5rem !important;
+}
+.pt60 {
+  padding-top: .6rem !important;
+}
+.pr60 {
+  padding-right: .6rem !important;
+}
+.pb60 {
+  padding-bottom: .6rem !important;
+}
+.pl60 {
+  padding-left: .6rem !important;
+}
+.pt100 {
+  padding-top: 1rem !important;
+}
+.pr100 {
+  padding-right: 1rem !important;
+}
+.pb100 {
+  padding-bottom: 1rem !important;
+}
+.pl100 {
+  padding-left: 1rem !important;
+}
+
+.cube-slide {
+  .cube-slide-dots {
+    span {
+      width: .16rem;
+      height: .16rem;
+      margin: 0 .05rem;
+      background: $color-background-white;
+      border: .02rem solid $color-background-black-56;
+      border-radius(50%);
+    }
+    .active {
+      background: $color-background-black-56;
+    }
+  }
+  .cube-slide-item-main {
+    overflow: hidden;
+    margin-bottom: .5rem;
+    > div {
+      float: left;
+      width: 25%;
+      border-box();
+      .avatar {
+        .inner { 
+          width: 1.4rem;
+          height: 1.4rem;
+          margin: 0 auto;
+          border: .05rem solid $color-background-black;
+          img {
+            width: 1.4rem;
+            display: block; 
+          }
+        }
+        .active {
+          position: relative;
+          border: .05rem solid $color-background-orange;
+          border-radius: .04rem;
+          &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: .3rem;
+            height: .3rem;
+            // background: url('../images/icon_markright@2x.png') no-repeat;
+            background-size: .3rem;
+          }
+        }
+      }
+      .name,
+      .money {
+        font-size: $font-size-large;
+        text-align: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        color: $color-background-black-108;
+        border-box();
+      }
+      .name {
+        padding-top: .2rem;
+      }
+      .money {
+        padding-top: .1rem;
+      }
+    }
+  }
+}
