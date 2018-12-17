@@ -18,9 +18,12 @@ export default {
   data () {
     return {
       swiperOption: {
-        pagination: '.swiper-pagination',
-        loop: true,
-        autoplay: 3000
+        pagination: '.swiper-pagination'
+        // loop: true,
+        // observer: true,
+        // observeParents: true,
+        // slidesPerView: 'auto',
+        // autoplay: 3000
       }
     }
   },
